@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>class-52</title>
+
+    <link href="./src/style.css" rel="stylesheet">
+</head>
+
+<body class="w-full min-h-screen bg-gray-200 flex justify-center my-[100px]">
+
+
+    <div class="w-[480px] bg-white p-4 rounded-md">
+        <h2 class="text-[26px] font-semibold text-center">To do app</h2>
+
+        <form id="main_form" action="">
+            <div class="pt-4 flex">
+                <input id="create_input" name="test" class="w-full border pl-2 border-gray-400 rounded-l-md "
+                    type="text" placeholder="Type your task...">
+                <button id="submit_form_btn" class="p-1.5 bg-green-600 rounded-r-md cursor-pointer text-white"
+                    type="submit">Add</button>
+            </div>
+            <!-- <input class="border" type="text">
+            <input class="border" type="text">
+            <input class="border" type="text">
+            <input class="border" type="text">
+            <input class="border" type="text"> -->
+
+
+        </form>
+
+        <span id="error_msg" class="text-red-700 hidden text-xs">Please write something in input box</span>
+
+
+        <!-- <div id="task_list_parent"> -->
+
+        <div id="task_items_container" class="mt-4">
+
+        </div>
+
+        <div class="flex items-center justify-between bg-green-100 rounded-md mt-6 pl-2">
+            <p>You have <span id="total_task_count">0</span> task</p>
+
+            <button id="clear_task"
+                class="text-danger bg-neutral-primary border border-danger hover:bg-danger hover:text-white focus:ring-4 focus:ring-neutral-tertiary font-medium leading-5 rounded-md text-xs px-3 py-1.5 focus:outline-none">Clear
+                all</button>
+        </div>
+
+
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type="module" src="./src/main.js"></script>
+</body>
+
+</html>
